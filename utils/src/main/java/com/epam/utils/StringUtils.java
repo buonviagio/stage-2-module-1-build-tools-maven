@@ -13,6 +13,6 @@ public class StringUtils {
                 return NumberUtils.createFloat(str) > 0;
             }
         }
-        return NumberUtils.toInt(str) > 0;
+        return NumberUtils.toLong(str) > 0;
     }
 }
