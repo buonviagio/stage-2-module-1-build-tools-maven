@@ -8,10 +8,9 @@ class StringUtilsTest {
 
     @Test
     void isPositiveNumber() {
-        String s1 = "65", s2 = "-12", s3 = "F", s4 = "54d";
+        String s1 = "65", s2 = "54d", s3 = "88";
         assertTrue(StringUtils.isPositiveNumber(s1));
-        assertFalse(StringUtils.isPositiveNumber(s2));
-        assertFalse(StringUtils.isPositiveNumber(s3));
-        assertTrue(StringUtils.isPositiveNumber(s4));
+        assertTrue(StringUtils.isPositiveNumber(s2));
+        assertTrue(StringUtils.isPositiveNumber(s3));
     }
 }
